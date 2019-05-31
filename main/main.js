@@ -15,7 +15,7 @@ module.exports = function main(num) {
   };
   for (let i = 0; i < 3; i++) {
     numArray.forEach((item, flag) => {
-      if (flag !== numArray.length) {
+      if (flag !== numArray.length - 1) {
         result += template[item].split("\n")[i] + " ";
       } else {
         result += template[item].split("\n")[i];
